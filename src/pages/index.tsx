@@ -2,7 +2,7 @@
 export default function Home() {
   return (
     <main className="">
-      <div className="flex min-h-screen flex-col items-center justify-center bg-gray-900">
+      <div className="flex min-h-screen flex-col items-center justify-center bg-gray-900 px-4">
         <h1 className="mb-8 animate-pulse text-5xl font-bold text-white">
           Coming Soon
         </h1>
