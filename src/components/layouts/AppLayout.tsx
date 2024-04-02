@@ -11,7 +11,7 @@ type AppLayoutProps = {
 
 const AppLayout = ({ children }: AppLayoutProps) => {
   return (
-    <>
+    <div className="flex min-h-screen flex-col bg-gray-100">
       <header className="flex gap-4 p-2">
         <div className="flex items-center justify-center">deck.box</div>
         <NavigationMenu>
@@ -25,9 +25,11 @@ const AppLayout = ({ children }: AppLayoutProps) => {
           </NavigationMenuList>
         </NavigationMenu>
       </header>
-      <main className="flex h-screen flex-col bg-gray-100">{children}</main>
+      <main className="container flex h-full flex-grow flex-col">
+        {children}
+      </main>
       <footer></footer>
-    </>
+    </div>
   );
 };
 
