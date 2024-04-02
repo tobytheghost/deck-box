@@ -70,8 +70,8 @@ const Demo = () => {
 
   return (
     <AppLayout>
-      <div className="grid grid-cols-4 gap-4 p-4">
-        {data?.decklist.commanders.map((card) => (
+      <div className="grid grid-cols-6 gap-4 p-4">
+        {/* {data?.decklist.commanders.map((card) => (
           <Card key={card.id}>
             <CardHeader>
               <CardTitle>{card.name}</CardTitle>
@@ -81,19 +81,19 @@ const Demo = () => {
               <img src={card.images.normal} alt={card.name} />
             </CardContent>
           </Card>
-        ))}
+        ))} */}
 
         <Card>
-          <CardHeader>
+          {/* <CardHeader>
             <CardTitle>{data?.decklist.name}</CardTitle>
-            <CardDescription>{data?.decklist.description}</CardDescription>
-          </CardHeader>
+          </CardHeader> */}
           <CardContent>
-            <div className="flex items-center justify-center">
-              <div className="flex h-64 w-64 flex-col gap-1">
-                <span className="flex h-3/4 w-full rounded-sm bg-red-700"></span>
-                <span className="flex h-1/4 w-full rounded-sm bg-red-800"></span>
-              </div>
+            <div className="relative flex items-center justify-center pt-6">
+              <span className="mb-12 ml-14 mt-14 h-24 w-24 -skew-y-[15deg] rounded-sm bg-red-700">
+                <span className="absolute left-[-3.25rem] top-[-1.575rem] h-32 w-12 skew-y-[45deg] rounded-sm bg-red-700"></span>
+                <span className="absolute left-[-1.575rem] top-[-3.25rem] h-12 w-24 skew-x-[45deg] rounded-sm bg-red-700"></span>
+                <span className="absolute top-[6.25rem] h-[1.675rem] w-[5.75rem] rounded-sm bg-red-800"></span>
+              </span>
             </div>
           </CardContent>
         </Card>

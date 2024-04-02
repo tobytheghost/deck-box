@@ -12,12 +12,13 @@ type AppLayoutProps = {
 const AppLayout = ({ children }: AppLayoutProps) => {
   return (
     <>
-      <header>
-        <NavigationMenu className="p-2">
+      <header className="flex gap-4 p-2">
+        <div className="flex items-center justify-center">deck.box</div>
+        <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuLink
               href="/"
-              className="hover:text-primary text-muted-foreground flex h-7 items-center justify-center rounded-full px-4 text-center text-sm transition-colors"
+              className="flex h-7 items-center justify-center rounded-full px-4 text-center text-sm text-muted-foreground transition-colors hover:text-primary"
             >
               Home
             </NavigationMenuLink>
